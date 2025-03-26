@@ -8,6 +8,8 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
+    background: url('/assets/images/Rectangle6771.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 /* Top Header Promo Banner */
@@ -15,15 +17,9 @@ body {
     background-color: #322D2D;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-/* Main Header Styles */
-.main-header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 16.18px 16.18px 16.18px 12.14px;
+    font-size: 14.16px;
+    font-weight: 100;
 }
 
 .header-container {
@@ -39,10 +35,12 @@ body {
 .logo {
     display: flex;
     align-items: center;
+    padding-top:9px;
+    
 }
 
 .logo-image {
-    height: 30px;
+    height: 29.27px;
     width: auto;
 }
 
@@ -50,13 +48,14 @@ body {
 .main-nav ul {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 32.36px;
 }
 
 .main-nav a {
     text-decoration: none;
     color: #000;
-    font-weight: 500;
+    font-weight: 300;
+    font-size: 16.18px;
     transition: color 0.3s ease;
 }
 
@@ -70,29 +69,15 @@ body {
     align-items: center;
 }
 
-/* .dropdown-arrow {
-    margin-left: 5px;
-    width: 8px;
-    height: 8px;
-    border-right: 1.5px solid #000;
-    border-bottom: 1.5px solid #000;
-    transform: rotate(45deg);
-} */
-
-/* .dropdown-arrow {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-image: url('assets/icons/svg1.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-left: 5px;
-} */
-
 .dropdown-arrow {
-    width: 12px;  /* Adjust size */
-    height: 12px;
+    width: 24px;  /* Adjust size */
+    height: 24px;
     margin-left: 5px; /* Add spacing from text */
+    border-radius: 50%; /* Makes it a circle */
+}
+
+.icon-wrapper{
+    border-radius: 50%;
 }
 
 /* Header Actions */
@@ -122,11 +107,15 @@ body {
     );
     color: #000;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-weight: 500;
+    /* Add these lines to make gap work */
+    display: inline-flex; /* or 'flex' if it's a block-level element */
+    align-items: center;
+    gap: 29.33px; /* Now this will work! */
 }
 
 .try-alcami:hover {
@@ -215,3 +204,205 @@ body {
         font-size: 20px;
     }
 }
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    padding: 60px 0;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #CAA648;
+    font-size: 16px;
+}
+
+.rating-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #322D2D;
+}
+
+.rating-description {
+    font-size: 14px;
+    color: #666;
+    margin-left: 10px;
+}
+
+.hero-text h1 {
+    font-size: 56px;
+    color: #322D2D;
+    margin-bottom: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 72px;
+    font-weight: 700;
+    color: #CAA648;
+    gap:18px;
+
+}
+
+.stat-mg{
+    font-size:25px;
+}
+
+.stat-label {
+    font-size: 16px;
+    color: #666;
+    text-transform: capitalize;
+}
+
+.shop-now {
+    background: linear-gradient(90deg, 
+        #CAA648 0%, 
+        #D5B147 15%, 
+        #E4C267 30%, 
+        #E2C065 45%, 
+        #DBB95E 60%, 
+        #D0AE52 75%, 
+        #C09F41 90%, 
+        #BB9A3C 100%
+    );
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    transition: opacity 0.3s ease;
+}
+
+.shop-now:hover {
+    opacity: 0.9;
+}
+
+.hero-product-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.product-background-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    z-index: 1; 
+}
+
+.product-background-images img{
+    object-fit: cover;
+    border-radius: 10px;
+    width:35%;
+    height:auto;
+}
+
+.product-background-images5 img{
+    object-fit: cover;
+    border-radius: 10px;
+    width:22%;
+    height:auto;
+}
+
+.product-background-images4 img{
+    object-fit: cover;
+    border-radius: 10px;
+    width:25%;
+    height:auto;
+}
+
+.product-background-images7 img{
+    object-fit: cover;
+    border-radius: 10px;
+    width:22%;
+    height:auto;
+}
+
+.product-background-images3 img{
+    object-fit: cover;
+    border-radius: 10px;
+    width:25%;
+    height:auto;
+}
+
+.product-background-images .blank {
+    background: transparent;
+    width: 90%;
+    height: 100px;
+}
+
+.ingredient1 { position: absolute; top: -50px; left: 35px;}
+.ingredient2 { position: absolute; top: 212px; left: 44px; width: 150px; }
+.ingredient3 { position: absolute; top: 110px; right: -110px; z-index: 3; transform: rotate(-5deg);}
+.ingredient4 { position: absolute; bottom: 75px; right: 250px; width: 140px; }
+.ingredient5 { position: absolute; top: 55px; right: 425px;}
+.ingredient6 { position: absolute; bottom: -155px; right: 60px; width: 150px; z-index: 3;}
+.ingredient7 { position: absolute; top: -20px; left: 580px; width: 140px; }
+.ingredient8 { position: absolute; bottom: -140px; left: 440px; width: 160px; z-index: 3;}
+.ingredient9 { position: absolute; bottom: 5px; right: -135px; width: 130px; z-index:3;}
+
+.product-main-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    z-index: 4; 
+}
+
+.product-main-images img {
+    object-fit: contain;
+    width: 200px;
+    padding: 20px;
+}
+
+.image-p1{
+    
+}
+
+.product1 { width: 300px; z-index: 3; padding:50px }
+        .product2 { width: 320px; z-index: 4; }
+        .product3 { width: 300px; z-index: 3; }
